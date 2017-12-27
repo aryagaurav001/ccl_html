@@ -109,6 +109,12 @@ nav li a:hover{
 	height: 32px;
 }
 
+#headernamediv{
+	font-family: 'Open Sans', sans-serif;
+	float: left;
+	padding: 25px;
+	margin-left: 50px;
+}			   
 
 .dropbtn {
     font-size: 16px;    
