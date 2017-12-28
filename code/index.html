@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="description" content="Corporate Cricket Champion T20 League" />
 	<meta name="keyword" content="Corporate Cricket, Champion T20 League, Cricket, T20, Tournament" />
 	<meta name="author" content="ABC pvt.ltd" />
@@ -13,15 +13,7 @@
 	<link rel="stylesheet" href="css/ccl_basic.css"/>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script>
-	
-		$(document).ready(function(){
-			$("li").hover(function(){
-				$("a").toggleClass("black");
-			});
-		});
-	</script>
-)
+	<script src="js/ccl_basic.js"></script>
 </head>
 <body>
 	<header>
@@ -40,12 +32,36 @@
 			</ul>
 		</nav>
 	</header>
-	<!--<section id="slideshow">
-				<div class="container">
-					<h1>IMAGES SLIDESHOW SECTION</h1>
-				</div>
+	
+	<!-- Generate the div tags, append img and wrap it under section using javascript-->
+	<section id="slideshow">
+		<div class="slideshow-container">
+			<div class="myslides fade">
+			  <img src="images/slideshow/1.jpg">
+			</div>
+
+			<div class="myslides fade">
+			  <img src="images/slideshow/2.jpg">
+			</div>
+
+			<div class="myslides fade">
+			  <img src="images/slideshow/3.jpg">
+			</div>
+			
+			<div class="myslides fade">
+			  <img src="images/slideshow/4.jpg">
+			</div>
+
+			<div class="myslides fade">
+			  <img src="images/slideshow/5.jpg">
+			</div>
+
+			<div class="myslides fade">
+			  <img src="images/slideshow/6.jpg">
+			</div>
+		</div>
 	</section>
-	<section id="teamssection">-->
+	<!--<section id="teamssection">-->
 			<!-- this would contain team name with their logo, spanning 100 % width -->
 				<!--<div class="container">
 					<h1>TEAMS SECTION</h1>-->
@@ -93,5 +109,9 @@
 			<h1>FOOTER</h1>
 			<p>Cricket Champion League, copyright &copy; 2017</p>
 	</footer>-->
+	
+	<script>
+		showSlides();
+	</script>
 </body>
 </html>
